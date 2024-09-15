@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/contact.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+    font-family: 'Kanit Bold';
+    src: url(/fonts/Kanit-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Kanit Regular';
+    src: url(/fonts/Kanit-Regular.ttf);
+}
+
+* {
+    font-family: 'Kanit Regular';
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFD7C4;
+}
+
+.navbar-brand {
+    font-family: 'Kanit Bold';
+    color: #214ddf;
+    transition: color .3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #214ddf;
+}
+
+ul {
+    width: 100%;
+}
+
+.nav-item {
+    margin-right: 15px;
+    position: relative;
+    font-size: 16px;
+}
+
+#active {
+    color:#214ddf;
+}
+
+section {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* img {
+    filter: drop-shadow(10px 12px 3px grey);
+    padding: 20px;
+} */
+
+.title {
+    font-family: "Kanit Bold";
+    color: #1a1a1a;
+}
+
+.description {
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+.navbar-toggler {
+    outline: 0;
+    border: 0;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.tangina {
+    /* color: white; */
+    background-color: #FFD7C4;
+}
+
+.colorputi {
+    color: #cccaca;
+}
+
+.colorputi:hover {
+    color: #214ddf;
+}
+.tangina:hover {
+    background-color: #214ddf;
+}
+
+    .contact-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .contact-container h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #4A00E0;
+    }
+
+    .contact-container p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .contact-container textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    .contact-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #FF4B2B;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-container {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+      }
+
+      .contact-container.fade {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+    .contact-container button:hover {
+      background-color: #ff6e5a;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-container {
+        padding: 20px;
+      }
+
+      .contact-container h1 {
+        font-size: 1.5rem;
+      }
+
+      .contact-container input, 
+      .contact-container textarea, 
+      .contact-container button {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Sniper Pro</a>
+        <button class="navbar-toggler tangina" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link colorputi" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item colorputi">
+                    <a class="nav-link colorputi" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link colorputi" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link colorputi" id="active" href="contact.html">Contacts</a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid d-flex justify-content-center align-items-center">
+  <div class="contact-container m-3">
+    <h1>Contact Us</h1>
+    <p>Have any questions or inquiries? We're here to help!</p>
+    <form action="#">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <input type="text" id="subject" name="subject" placeholder="Subject">
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Kanit Bold';
+    src: url(/fonts/Kanit-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Kanit Regular';
+    src: url(/fonts/Kanit-Regular.ttf);
+}
+
+* {
+    font-family: 'Kanit Regular';
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFD7C4;
+}
+
+.navbar-brand {
+    font-family: 'Kanit Bold';
+    color: #214ddf;
+    transition: color .3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #214ddf;
+}
+
+ul {
+    width: 100%;
+}
+
+.nav-item {
+    margin-right: 15px;
+    position: relative;
+    font-size: 16px;
+}
+
+#active {
+    color:#214ddf;
+}
+
+section {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* img {
+    filter: drop-shadow(10px 12px 3px grey);
+    padding: 20px;
+} */
+
+.title {
+    font-family: "Kanit Bold";
+    color: #1a1a1a;
+}
+
+.description {
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+.navbar-toggler {
+    outline: 0;
+    border: 0;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.tangina {
+    /* color: white; */
+    background-color: #FFD7C4;
+}
+
+.colorputi {
+    color: #cccaca;
+}
+
+.colorputi:hover {
+    color: #214ddf;
+}
+.tangina:hover {
+    background-color: #214ddf;
+}
+
+.s {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.s.fade {
+	opacity: 1;
+	transform: translateY(0px);
+}
