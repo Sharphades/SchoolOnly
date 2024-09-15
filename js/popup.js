@@ -1,7 +1,7 @@
 const title = document.querySelector('.title');
 const description = document.querySelector('.description');
 const button = document.querySelector('.button');
-const carousel = document.getElementById('carouselExampleAutoplaying');
+const carousel = document.querySelector('.img');
 
 
 

@@ -1,128 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Services Section</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoStrum</title>
+    <link rel="shortcut icon" href="imgs/imageedit_1_4965591714.png" type="image/png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/services.css">
     <script defer src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="services.css" />
-    <script defer src="js/card.services.js"></script>
-  </head>
-  <body>
+    <script defer src="js/parasatanan.js"></script>
+</head>
+<body>
     <nav class="navbar navbar-expand-lg bg-dark sticky-top">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="">Sniper Pro</a>
-          <button class="navbar-toggler tangina" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav d-flex justify-content-end">
-                  <li class="nav-item">
-                      <a class="nav-link colorputi" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item colorputi">
-                      <a class="nav-link colorputi" id="active" href="services.html">Services</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link colorputi" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link colorputi" href="contact.html">Contacts</a> 
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-    <section>
-      <div class="row">
-        <h2 class="section-heading">Our Services</h2>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-hammer"></i>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">EchoStrum</a>
+            <button class="navbar-toggler tangina" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link colorputi" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item colorputi">
+                        <a class="nav-link colorputi" id="active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorputi" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorputi" href="contact.html">Contacts</a> 
+                    </li>
+                </ul>
             </div>
-            <h3>Comprehensive Maintenance and Repair</h3>
-            <p>
-              Oil Changes: Ensuring your engine runs smoothly.
-              Brake Inspections: Keeping your stopping power sharp and reliable.
-              Tire Checks and Replacements: Maintaining optimal traction and safety.
-              Battery Testing and Replacement: Avoiding unexpected breakdowns.
-            </p>
-          </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-brush"></i>
+    </nav>
+    <header class=" p-3 d-flex justify-content-center align-items-center">
+        Services
+    </header>
+    <section class="container mt-3">
+        <div class="row">
+
+            <div class="col-md-6 mb-4">
+                <div class="card s ">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCustomOrders" aria-expanded="true" aria-controls="collapseCustomOrders">
+                                Custom Guitar Orders
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseCustomOrders" class="collapse show" data-bs-parent="#servicesAccordion">
+                        <div class="card-body">
+                            We offer custom guitar orders tailored to your specifications. Choose from a variety of woods, finishes, and hardware to create your perfect instrument.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h3>Performance Tuning and Upgrades</h3>
-            <p>
-              Engine Tuning Unlock the full potential of your Sniper 155
-               Yamaha with our performance tuning services. We offer:ECU Mapping:
-               Customizing your bike's electronic control unit for enhanced performance.
-               High-Performance Parts Installation: From exhaust systems to air filters,
-               we provide parts that boost power and efficiency.
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-wrench"></i>
+
+            <div class="col-md-6 mb-4">
+                <div class="card s">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGuitarRepairs" aria-expanded="false" aria-controls="collapseGuitarRepairs">
+                                Guitar Repairs
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseGuitarRepairs" class="collapse show" data-bs-parent="#servicesAccordion">
+                        <div class="card-body">
+                            Our expert technicians provide high-quality guitar repairs, from simple adjustments to extensive restorations. Get your guitar back in top playing condition.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h3>Customization Services</h3>
-            <p>
-              Find your perfect riding position with our handlebar customization services.
-              We offer: Height Adjustments: Tailoring the handlebars to your comfort.
-              Grips and Levers: Enhancing control and comfort with customized grips and levers.
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-truck-pickup"></i>
+
+            <div class="col-md-6 mb-4">
+                <div class="card s">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccessories" aria-expanded="false" aria-controls="collapseAccessories">
+                                Guitar Accessories
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseAccessories" class="collapse show" data-bs-parent="#servicesAccordion">
+                        <div class="card-body">
+                            Explore our wide range of guitar accessories, including strings, pedals, cases, and more. Enhance your playing experience with the best gear available.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h3>Scheduled Service Plans</h3>
-            <p>
-              Keep your maintenance on track with our scheduled service plans. Benefits include:
-              Regular Reminders: Never miss a maintenance appointment.
-              Discounted Rates: Enjoy savings on regular services.
-              Priority Scheduling: Get your bike serviced quickly with minimal wait times.
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-broom"></i>
+
+            <div class="col-md-6 mb-4">
+                <div class="card s">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLessons" aria-expanded="false" aria-controls="collapseLessons">
+                                Guitar Lessons
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseLessons" class="collapse show" data-bs-parent="#servicesAccordion">
+                        <div class="card-body">
+                            Whether you're a beginner or advanced player, our guitar lessons are designed to help you improve your skills. Learn from experienced instructors at your own pace.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h3>Genuine Parts and Accessories</h3>
-            <p>
-              Trust only genuine Yamaha parts and accessories for your Sniper 155. We stock a wide range of: 
-              OEM Parts: Ensuring compatibility and performance.
-              Yamaha Accessories: From luggage systems to protective gear,
-               enhance your riding experience with Yamaha-approved accessories.
-            </p>
-          </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
-            </div>
-            <h3>Customer Support and Consultation</h3>
-            <p>
-              Our team is here to support you with:
-              Expert Advice: Get recommendations on maintenance, upgrades, and customization.
-              Service Consultations: Discuss your bike's needs with our knowledgeable staff.
-              After-Service Support: Continued assistance after your service is complete.
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
-  </body>
+</body>
 </html>

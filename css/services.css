@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Kanit Bold';
-    src: url(/fonts/Kanit-Bold.ttf);
+    src: url(/fonts/ProtestGuerrilla-Regular.ttf);
 }
 
 @font-face {
@@ -21,17 +21,17 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #FFD7C4;
+    background-color: #A1DD70;
 }
 
 .navbar-brand {
     font-family: 'Kanit Bold';
-    color: #214ddf;
+    color: #EE4E4E;
     transition: color .3s ease-in-out;
 }
 
 .navbar-brand:hover {
-    color: #214ddf;
+    color: #a03434;
 }
 
 ul {
@@ -45,7 +45,7 @@ ul {
 }
 
 #active {
-    color:#214ddf;
+    color:#EE4E4E;
 }
 
 section {
@@ -53,10 +53,10 @@ section {
     flex-grow: 1;
 }
 
-/* img {
+img {
     filter: drop-shadow(10px 12px 3px grey);
     padding: 20px;
-} */
+}
 
 .title {
     font-family: "Kanit Bold";
@@ -80,7 +80,7 @@ section {
 
 .tangina {
     /* color: white; */
-    background-color: #FFD7C4;
+    background-color: #A1DD70;
 }
 
 .colorputi {
@@ -88,19 +88,39 @@ section {
 }
 
 .colorputi:hover {
-    color: #214ddf;
+    color: #EE4E4E;
 }
 .tangina:hover {
-    background-color: #214ddf;
+    background-color: #EE4E4E;
+}
+
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603));
+    color : rgb(190, 176, 176);
+    font-weight: bold;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Kanit Bold';
+}
+
+.btn {
+    color:#EE4E4E;
+}
+
+.puwa {
+    color:#EE4E4E;
+    font-family: 'Kanit Bold';
 }
 
 .s {
-	opacity: 0;
-	transform: translateY(20px);
-	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition:opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-.s.fade {
-	opacity: 1;
-	transform: translateY(0px);
+.s.putangina {
+    opacity: 1;
+    transform: translateX(0px);
 }

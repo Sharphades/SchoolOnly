@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Kanit Bold';
-    src: url(/fonts/Kanit-Bold.ttf);
+    src: url(/fonts/ProtestGuerrilla-Regular.ttf);
 }
 
 @font-face {
@@ -21,17 +21,17 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #FFD7C4;
+    background-color: #A1DD70;
 }
 
 .navbar-brand {
     font-family: 'Kanit Bold';
-    color: #214ddf;
+    color: #EE4E4E;
     transition: color .3s ease-in-out;
 }
 
 .navbar-brand:hover {
-    color: #214ddf;
+    color: #a03434;
 }
 
 ul {
@@ -45,7 +45,7 @@ ul {
 }
 
 #active {
-    color:#214ddf;
+    color:#EE4E4E;
 }
 
 section {
@@ -80,7 +80,7 @@ img {
 
 .tangina {
     /* color: white; */
-    background-color: #FFD7C4;
+    background-color: #A1DD70;
 }
 
 .colorputi {
@@ -88,37 +88,37 @@ img {
 }
 
 .colorputi:hover {
-    color: #214ddf;
+    color: #EE4E4E;
 }
 .tangina:hover {
-    background-color: #214ddf;
+    background-color: #EE4E4E;
 }
 
-button {
+.button {
     padding: 17px 40px;
     border-radius: 50px;
     cursor: pointer;
     border: 0;
-    background-color: #63a3f7;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
+    background-color: #d47272;
+    box-shadow: #d47272 0 0 8px;
+    letter-spacing: 3.5px;
     text-transform: uppercase;
     font-size: 15px;
     transition: all 0.5s ease;
   }
   
-  button:hover {
+  .button:hover {
     letter-spacing: 3px;
-    background-color: #214ddf;
+    background-color: #EE4E4E;
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(79, 115, 216) 0px 7px 29px 0px;
+    box-shadow: #d47272 0px 7px 29px 0px;
   }
   
-  button:active {
+  .button:active {
     letter-spacing: 3px;
-    background-color: hsl(241, 94%, 48%);
+    background-color: #a02323;
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    box-shadow: #d47272 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
   }
@@ -136,14 +136,25 @@ button {
         rotate: -15deg;
     }
 
-    .title, .description, .button, #carouselExampleAutoplaying{
+    .title, .description, .button, .img{
         opacity: 0;
         transform: translateX(-20px);
         transition: transform 1s ease-in-out, opacity 1s ease-in-out;
     }
 
+    .img {
+        opacity: 0;
+        transform: translate(20px,-100px);
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
 
-    .title.negrow, .description.negrow, .button.negrow, #carouselExampleAutoplaying.negrow {
+
+    .title.negrow, .description.negrow, .button.negrow {
         transform: scale(1);
         opacity: 1;
+    }
+
+    .img.negrow {
+        opacity: 1;
+        transform: translate(0px,0px);
     }
